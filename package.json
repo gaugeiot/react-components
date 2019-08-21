@@ -1,0 +1,50 @@
+{
+  "name": "@gaugeiot/react",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "version": "1.0.0",
+  "description": "Gaugeiot React components library",
+  "main": "index.js",
+  "scripts": {
+    "build": "lerna run build",
+    "bootstrap": "lerna bootstrap --use-workspaces",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "start-storybook -p 8888"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gaugeiot/react-components.git"
+  },
+  "keywords": [
+    "gaugeiot",
+    "react",
+    "components"
+  ],
+  "author": "Jose Igor Moreira <joseigorcfm@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gaugeiot/react-components/issues"
+  },
+  "homepage": "https://github.com/gaugeiot/react-components#readme",
+  "devDependencies": {
+    "@babel/cli": "7.5.5",
+    "@babel/core": "7.5.5",
+    "@babel/preset-env": "7.5.5",
+    "@babel/preset-react": "7.0.0",
+    "@storybook/addon-actions": "5.1.11",
+    "@storybook/addon-knobs": "5.1.11",
+    "@storybook/react": "5.1.11",
+    "babel-loader": "8.0.6",
+    "babel-plugin-styled-components": "1.10.6",
+    "cross-env": "5.2.0",
+    "lerna": "^3.16.4",
+    "prop-types": "15.7.2",
+    "react": "16.9.0",
+    "react-dom": "16.9.0",
+    "styled-components": "4.3.2",
+    "webpack": "4.39.2",
+    "yarn": "1.17.3"
+  }
+}
