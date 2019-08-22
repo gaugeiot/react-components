@@ -1,3 +1,3 @@
-import {colors, palette} from "./colors";
+import {colors, palette} from './colors';
 
-module.exports ={colors, palette};
+export {colors, palette};
