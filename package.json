@@ -10,6 +10,7 @@
         "coverage": "jest --coverage",
         "deploy-storybook": "storybook-to-ghpages",
         "dev": "start-storybook -p 5555",
+        "git-cz": "git-cz",
         "lint:js": "eslint . --ext .js --ignore-pattern lib --ignore-pattern node_modules",
         "lint:styles": "stylelint './src/**/*.js'",
         "lint": "yarn lint:js && yarn lint:styles",
@@ -43,6 +44,8 @@
         "babel-jest": "^24.8.0",
         "babel-loader": "^8.0.6",
         "babel-plugin-styled-components": "^1.10.6",
+        "commitizen": "^4.0.3",
+        "cz-conventional-changelog": "^3.0.2",
         "eslint": "4.19.1",
         "eslint-config-get-off-my-lawn-prettier": "^1.0.0",
         "husky": "^3.0.2",
@@ -63,5 +66,10 @@
         "stylelint-config-styled-components": "0.1.1",
         "stylelint-processor-styled-components": "1.8.0",
         "webpack": "^4.39.1"
+    },
+    "config": {
+        "commitizen": {
+            "path": "cz-conventional-changelog"
+        }
     }
 }
