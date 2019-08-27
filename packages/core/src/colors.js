@@ -24,11 +24,11 @@ export const colors = {
 
 export const palette = {
     danger: colors.red,
-    dark: colors.gray_800,
+    dark: colors.gray800,
     info: colors.cyan,
-    light: colors.gray_100,
+    light: colors.gray100,
     primary: colors.blue,
-    secondary: colors.gray_600,
+    secondary: colors.gray600,
     success: colors.green,
     warning: colors.yellow
 };
