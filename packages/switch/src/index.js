@@ -1,8 +1,7 @@
-import React, {useState} from 'react';
-import styled from 'styled-components';
-import PropTypes from 'prop-types';
-import {palette} from '@gaugeiot/core';
-// import { palette } from '../../core/lib/index';
+import React from "react";
+import styled from "styled-components";
+import PropTypes from "prop-types";
+import { palette } from "@gaugeiot/core";
 
 const SwitchStyled = styled.div`
     display: flex;
@@ -11,34 +10,37 @@ const SwitchStyled = styled.div`
     margin: 10px 0;
 
     & .switch-body {
-        background-color: ${(props) => {
+        background-color: ${props => {
             return props.checked ? props.checkedColor : props.uncheckedColor;
         }};
         border: solid 1px transparent;
-        width: ${(props) => `${props.size}px`}; /* golden numbers*/
-        border-radius: 999px; /*trick to get a perfect round border*/
+        width: ${props => `${props.size}px`}; /* golden numbers */
+        border-radius: 999px; /* trick to get a perfect round border */
         transition: all 0.5s ease;
     }
 
     & .switch-toogle {
-        width: ${(props) => `${props.size / 2}px`}; /* half of the SwitchBody*/
-        height: ${(props) => `${props.size / 2}px`}; /* half of the SwitchBody*/
-        background-color: white;
+        width: ${props => `${props.size / 2}px`}; /* half of the SwitchBody */
+        height: ${props => `${props.size / 2}px`}; /* half of the SwitchBody */
+        background-color: #fff;
         border-radius: 50%;
-        border: ${(props) => (props.checked ? `solid 2px ${props.checkedColor}` : `solid 2px ${props.uncheckedColor}`)};
+        border: ${props =>
+            props.checked
+                ? `solid 2px ${props.checkedColor}`
+                : `solid 2px ${props.uncheckedColor}`};
         box-sizing: border-box;
-        transform: ${(props) => (props.checked ? 'translateX(100%)' : null)};
+        transform: ${props => (props.checked ? "translateX(100%)" : null)};
         transition: transform 0.5s ease;
     }
 `;
 
-const Switch = ({checked, size, onClick, checkedColor, uncheckedColor, ...others}) => {
+const Switch = ({ checked, size, checkedColor, uncheckedColor, ...others }) => {
     return (
         <>
             <SwitchStyled
                 checked={checked}
-                size={size}
                 checkedColor={checkedColor}
+                size={size}
                 uncheckedColor={uncheckedColor}
                 {...others}
             >
@@ -52,15 +54,15 @@ const Switch = ({checked, size, onClick, checkedColor, uncheckedColor, ...others
 
 Switch.defaultProps = {
     checked: false,
-    size: 96,
     checkedColor: palette.success,
+    size: 96,
     uncheckedColor: palette.secondary
 };
 
 Switch.propTypes = {
     checked: PropTypes.bool,
-    size: PropTypes.number,
     checkedColor: PropTypes.string,
+    size: PropTypes.number,
     uncheckedColor: PropTypes.string
 };
 

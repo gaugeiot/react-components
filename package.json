@@ -12,12 +12,12 @@
         "git-cz": "git-cz",
         "lint": "yarn lint:js && yarn lint:styles",
         "lint:js": "eslint . --ext .js --ignore-pattern lib --ignore-pattern node_modules",
-        "lint:styles": "stylelint './src/**/*.js'",
+        "lint:styles": "stylelint packages/**/src/**/*.js",
         "prettier": "prettier --write \"**/*.{js,json,md,yml}\"",
         "lerna-publish": "lerna publish",
         "test": "yarn build && yarn lint && yarn test-coverage",
-        "test-coverage": "jest --coverage",
-        "unit": "jest"
+        "test-coverage": "jest --coverage --passWithNoTests",
+        "unit": "jest `--passWithNoTests"
     },
     "husky": {
         "hooks": {
