@@ -1,0 +1,110 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Switch should render 1`] = `
+<DocumentFragment>
+  .c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.c0 .switch-body {
+  background-color: #6c757d;
+  border: solid 1px transparent;
+  width: 96px;
+  border-radius: 999px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.c0 .switch-toogle {
+  width: 48px;
+  height: 48px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: solid 2px #6c757d;
+  box-sizing: border-box;
+  -webkit-transition: -webkit-transform 0.5s ease;
+  -webkit-transition: transform 0.5s ease;
+  transition: transform 0.5s ease;
+}
+
+<div
+    class="c0"
+    size="96"
+  >
+    <div
+      class="switch-body"
+    >
+      <div
+        class="switch-toogle"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Switch should render a checked switch 1`] = `
+<DocumentFragment>
+  .c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.c0 .switch-body {
+  background-color: #28a745;
+  border: solid 1px transparent;
+  width: 96px;
+  border-radius: 999px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.c0 .switch-toogle {
+  width: 48px;
+  height: 48px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: solid 2px #28a745;
+  box-sizing: border-box;
+  -webkit-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  transform: translateX(100%);
+  -webkit-transition: -webkit-transform 0.5s ease;
+  -webkit-transition: transform 0.5s ease;
+  transition: transform 0.5s ease;
+}
+
+<div
+    class="c0"
+    size="96"
+  >
+    <div
+      class="switch-body"
+    >
+      <div
+        class="switch-toogle"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;

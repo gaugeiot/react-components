@@ -1,3 +1,4 @@
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 # Monorepo with Lerna & Yarn Workspaces
 
 > A Monorepo with multiple packages and a shared build, test, and release process.

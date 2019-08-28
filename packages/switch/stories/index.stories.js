@@ -1,20 +1,21 @@
-import React, {useState} from 'react';
-import {storiesOf} from '@storybook/react';
-import {text, boolean, number, select} from '@storybook/addon-knobs';
-import Switch from '../src/index';
-import {palette} from '@gaugeiot/core';
+import React from "react";
+import { storiesOf } from "@storybook/react";
+import { boolean, number, select } from "@storybook/addon-knobs";
+import { palette } from "@gaugeiot/core";
 
-const stories = storiesOf('Switch', module);
+import Switch from "../src/index";
 
-stories.add('default', () => {
-    const checkedColor = select('Checked Color:', palette, palette.success);
-    const uncheckedColor = select('Unchecked Color:', palette, palette.secondary);
+const stories = storiesOf("Switch", module);
+
+stories.add("default", () => {
+    const checkedColor = select("Checked Color:", palette, palette.success);
+    const uncheckedColor = select("Unchecked Color:", palette, palette.dark);
 
     return (
         <Switch
-            checked={boolean('Checked', false)}
-            size={number('Size', 96)}
+            checked={boolean("Checked", false)}
             checkedColor={checkedColor}
+            size={number("Size", 96)}
             uncheckedColor={uncheckedColor}
         />
     );
