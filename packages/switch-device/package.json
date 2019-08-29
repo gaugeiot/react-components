@@ -1,0 +1,29 @@
+{
+    "name": "@gaugeiot/switch-device",
+    "version": "1.0.0",
+    "description": "Switch react component",
+    "main": "lib/index.js",
+    "module": "src/index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "gaugeiot",
+        "react",
+        "switch"
+    ],
+    "author": "Jose Igor Moreira <joseigorcfm@gmail.com>",
+    "license": "MIT",
+    "dependencies": {
+        "styled-components": "4.3.2",
+        "prop-types": "^15.7.2",
+        "@gaugeiot/core": "1.0.0",
+        "@gaugeiot/icon": "1.0.0",
+        "@gaugeiot/paper": "1.0.0",
+        "@gaugeiot/switch": "1.0.0"
+    },
+    "peerDependencies": {
+        "react": " ^16.0.0",
+        "react-dom": "^16.0.0"
+    }
+}
