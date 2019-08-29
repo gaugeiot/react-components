@@ -10,12 +10,8 @@ const stories = storiesOf("SgvIcon", module);
 
 stories
     .add("Gear", () => {
-        return (
-            <SvgGear fill={select("Checked Color:", palette, palette.dark)} />
-        );
+        return <SvgGear fill={select("Color:", palette, palette.dark)} />;
     })
     .add("Wifi", () => {
-        return (
-            <SvgWifi fill={select("Checked Color:", palette, palette.dark)} />
-        );
+        return <SvgWifi fill={select("Color:", palette, palette.dark)} />;
     });
