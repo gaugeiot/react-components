@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import PropTypes from "prop-types";
-import { palette, colors } from "@gaugeiot/core";
+import { palette } from "@gaugeiot/core";
 import { SvgGear, SvgWifi } from "@gaugeiot/icon";
 import Paper from "@gaugeiot/paper";
 import Switch from "@gaugeiot/switch";
@@ -9,10 +8,6 @@ import Switch from "@gaugeiot/switch";
 const SwitchDeviceHeader = styled.div`
     display: flex;
     flex-direction: row;
-`;
-
-const SwitchDeviceStatus = styled.div`
-    margin-left: auto;
 `;
 
 const SwitchDeviceContent = styled.div`
@@ -23,6 +18,7 @@ const SwitchDeviceContent = styled.div`
     & .switch-device-btn {
         margin-left: auto;
     }
+
     & .switch-device-title {
         font-size: 20px;
     }
@@ -35,22 +31,20 @@ const SwitchDeviceFooter = styled.div`
     justify-content: flex-end;
 `;
 
-const SwitchDevice = props => {
-    return (
-        <Paper>
-            <SwitchDeviceHeader>
-                <SvgWifi fill={palette.primary} />
-            </SwitchDeviceHeader>
-            <SwitchDeviceContent>
-                <span className="switch-device-title">{"Device Name"}</span>
-                <Switch className="switch-device-btn" size={48} />
-            </SwitchDeviceContent>
-            <SwitchDeviceFooter>
-                <SvgGear />
-            </SwitchDeviceFooter>
-        </Paper>
-    );
-};
+const SwitchDevice = () => (
+    <Paper>
+        <SwitchDeviceHeader>
+            <SvgWifi fill={palette.primary} />
+        </SwitchDeviceHeader>
+        <SwitchDeviceContent>
+            <span className="switch-device-title">{"Device Name"}</span>
+            <Switch className="switch-device-btn" size={48} />
+        </SwitchDeviceContent>
+        <SwitchDeviceFooter>
+            <SvgGear />
+        </SwitchDeviceFooter>
+    </Paper>
+);
 
 SwitchDevice.defaultProps = {};
 
